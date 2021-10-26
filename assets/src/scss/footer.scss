@@ -1,0 +1,60 @@
+.footer {
+   @media (max-width: 580px) {
+      .main__logo {
+         display: none;
+      }
+   }
+   background: $grey;
+   &__wrapp {
+      padding: 40px 0 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__contacts {
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 580px) {
+         align-items: flex-start;
+      }
+   }
+   &__link {
+      font-family: $ff-Regular;
+      font-size: 2.5em;
+      line-height: 1.3;
+      color: #000;
+      display: flex;
+      align-items: center;
+      margin-bottom: 17px;
+      &:last-child {
+         margin-bottom: 26px;
+      }
+      transition: 0.1s ease-out;
+      &:hover {
+         color: #086935;
+      }
+      svg {
+         width: 25px;
+         margin-right: 8px;
+      }
+   }
+   &__social {
+      display: flex;
+      justify-content: flex-end;
+   }
+   &-social__link {
+      width: 38px;
+      margin-left: 20px;
+      svg path {
+         transition: 0.2s ease-out;
+      }
+      &:hover {
+         svg path {
+            fill: #086935;
+         }
+      }
+      &:first-child {
+         margin-left: 0;
+      }
+   }
+}
